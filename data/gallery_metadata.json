@@ -1,0 +1,401 @@
+[
+  {
+    "filename": "tacos_pastor_pina.jpg",
+    "path": "gallery_images/tacos_pastor_pina.jpg",
+    "title": "Tacos al pastor con piña, cilantro y cebolla en tortilla de maíz",
+    "url": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=640&q=80",
+    "id": 1
+  },
+  {
+    "filename": "tacos_crujientes_limon.jpg",
+    "path": "gallery_images/tacos_crujientes_limon.jpg",
+    "title": "Tacos dorados crujientes con rodajas de limón verde y salsa roja",
+    "url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=640&q=80",
+    "id": 2
+  },
+  {
+    "filename": "guacamole_totopos.jpg",
+    "path": "gallery_images/guacamole_totopos.jpg",
+    "title": "Tazón de guacamole verde con aguacate, jitomate y totopos de maíz",
+    "url": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=640&q=80",
+    "id": 3
+  },
+  {
+    "filename": "nachos_queso_jalapeno.jpg",
+    "path": "gallery_images/nachos_queso_jalapeno.jpg",
+    "title": "Nachos cubiertos de queso amarillo derretido, rodajas de jalapeño y crema",
+    "url": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=640&q=80",
+    "id": 4
+  },
+  {
+    "filename": "burrito_partido_mitad.jpg",
+    "path": "gallery_images/burrito_partido_mitad.jpg",
+    "title": "Burrito grande envuelto en tortilla de harina partido a la mitad con arroz y frijoles",
+    "url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=640&q=80",
+    "id": 5
+  },
+  {
+    "filename": "quesadillas_salsa_verde.jpg",
+    "path": "gallery_images/quesadillas_salsa_verde.jpg",
+    "title": "Quesadillas doradas con queso derretido y guacamole en plato rústico",
+    "url": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=640&q=80",
+    "id": 6
+  },
+  {
+    "filename": "pizza_margarita_albahaca.jpg",
+    "path": "gallery_images/pizza_margarita_albahaca.jpg",
+    "title": "Pizza napolitana con salsa de tomate roja, mozzarella blanca y hojas de albahaca fresca",
+    "url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=640&q=80",
+    "id": 7
+  },
+  {
+    "filename": "pizza_pepperoni_rebanada.jpg",
+    "path": "gallery_images/pizza_pepperoni_rebanada.jpg",
+    "title": "Pizza de pepperoni dorada con bordes crujientes sobre tabla de madera",
+    "url": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=640&q=80",
+    "id": 8
+  },
+  {
+    "filename": "hamburguesa_doble_papas.jpg",
+    "path": "gallery_images/hamburguesa_doble_papas.jpg",
+    "title": "Hamburguesa con queso cheddar, lechuga, jitomate y papas fritas a un lado",
+    "url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=640&q=80",
+    "id": 9
+  },
+  {
+    "filename": "hamburguesa_gourmet_tocino.jpg",
+    "path": "gallery_images/hamburguesa_gourmet_tocino.jpg",
+    "title": "Hamburguesa alta en pan brioche brillante sobre tabla oscura con tocino",
+    "url": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=640&q=80",
+    "id": 10
+  },
+  {
+    "filename": "ramen_huevo_palillos.jpg",
+    "path": "gallery_images/ramen_huevo_palillos.jpg",
+    "title": "Tazón de ramen japonés con huevo cocido partido, fideos, carne y palillos",
+    "url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=640&q=80",
+    "id": 11
+  },
+  {
+    "filename": "sushi_nigiri_salmon.jpg",
+    "path": "gallery_images/sushi_nigiri_salmon.jpg",
+    "title": "Bandeja de sushi nigiri y rollos maki con salmón naranja brillante",
+    "url": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=640&q=80",
+    "id": 12
+  },
+  {
+    "filename": "sushi_rollos_ajonjoli.jpg",
+    "path": "gallery_images/sushi_rollos_ajonjoli.jpg",
+    "title": "Rollos de sushi cortados con aguacate, semillas de ajonjolí y salsa de soya",
+    "url": "https://images.unsplash.com/photo-1553621042-f6e147245754?w=640&q=80",
+    "id": 13
+  },
+  {
+    "filename": "espagueti_salsa_tomate.jpg",
+    "path": "gallery_images/espagueti_salsa_tomate.jpg",
+    "title": "Plato blanco de espagueti italiano con salsa roja de tomate y hojas de albahaca",
+    "url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=640&q=80",
+    "id": 14
+  },
+  {
+    "filename": "pasta_fettuccine_camarones.jpg",
+    "path": "gallery_images/pasta_fettuccine_camarones.jpg",
+    "title": "Pasta italiana en plato hondo con camarones, perejil y salsa cremosa",
+    "url": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=640&q=80",
+    "id": 15
+  },
+  {
+    "filename": "lasana_horneada_queso.jpg",
+    "path": "gallery_images/lasana_horneada_queso.jpg",
+    "title": "Porción cuadrada de lasaña horneada con capas de pasta, carne y queso gratinado",
+    "url": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=640&q=80",
+    "id": 16
+  },
+  {
+    "filename": "paella_mariscos_camarones.jpg",
+    "path": "gallery_images/paella_mariscos_camarones.jpg",
+    "title": "Paella española de arroz amarillo en sartén con camarones y mejillones",
+    "url": "https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=640&q=80",
+    "id": 17
+  },
+  {
+    "filename": "filete_res_romero.jpg",
+    "path": "gallery_images/filete_res_romero.jpg",
+    "title": "Corte de carne de res asada a la parrilla en rebanadas con ramita de romero",
+    "url": "https://images.unsplash.com/photo-1544025162-d76694265947?w=640&q=80",
+    "id": 18
+  },
+  {
+    "filename": "costillas_bbq_parrilla.jpg",
+    "path": "gallery_images/costillas_bbq_parrilla.jpg",
+    "title": "Costillas de cerdo bañadas en salsa barbacoa brillante a la parrilla",
+    "url": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=640&q=80",
+    "id": 19
+  },
+  {
+    "filename": "pollo_asado_limon.jpg",
+    "path": "gallery_images/pollo_asado_limon.jpg",
+    "title": "Pollo rostizado dorado entero en charola con rodajas de limón y hierbas",
+    "url": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=640&q=80",
+    "id": 20
+  },
+  {
+    "filename": "alitas_picantes_ajonjoli.jpg",
+    "path": "gallery_images/alitas_picantes_ajonjoli.jpg",
+    "title": "Alitas de pollo glaseadas con salsa picante roja y semillas de ajonjolí blanco",
+    "url": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=640&q=80",
+    "id": 21
+  },
+  {
+    "filename": "salmon_parrilla_esparragos.jpg",
+    "path": "gallery_images/salmon_parrilla_esparragos.jpg",
+    "title": "Filete de salmón rosado a la plancha con espárragos verdes y limón",
+    "url": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=640&q=80",
+    "id": 22
+  },
+  {
+    "filename": "camarones_ajillo_sarten.jpg",
+    "path": "gallery_images/camarones_ajillo_sarten.jpg",
+    "title": "Camarones salteados con ajo, perejil y limón en sartén oscuro",
+    "url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=640&q=80",
+    "id": 23
+  },
+  {
+    "filename": "ensalada_cesar_aguacate.jpg",
+    "path": "gallery_images/ensalada_cesar_aguacate.jpg",
+    "title": "Ensalada fresca con hojas verdes, jitomates cherry, aguacate y aderezo",
+    "url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=640&q=80",
+    "id": 24
+  },
+  {
+    "filename": "ensalada_griega_feta.jpg",
+    "path": "gallery_images/ensalada_griega_feta.jpg",
+    "title": "Ensalada mediterránea con cubos de queso feta blanco, aceitunas negras y pepino",
+    "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=640&q=80",
+    "id": 25
+  },
+  {
+    "filename": "sopa_calabaza_crema.jpg",
+    "path": "gallery_images/sopa_calabaza_crema.jpg",
+    "title": "Sopa crema de calabaza color naranja en tazón con semillas y pan tostado",
+    "url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=640&q=80",
+    "id": 26
+  },
+  {
+    "filename": "pan_aguacate_huevo_pochado.jpg",
+    "path": "gallery_images/pan_aguacate_huevo_pochado.jpg",
+    "title": "Tostada de pan con aguacate machacado y huevo pochado encima",
+    "url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=640&q=80",
+    "id": 27
+  },
+  {
+    "filename": "hotcakes_miel_frutos_rojos.jpg",
+    "path": "gallery_images/hotcakes_miel_frutos_rojos.jpg",
+    "title": "Torre de hotcakes esponjosos bañados en miel de maple con moras y fresas",
+    "url": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=640&q=80",
+    "id": 28
+  },
+  {
+    "filename": "waffles_fresas_crema.jpg",
+    "path": "gallery_images/waffles_fresas_crema.jpg",
+    "title": "Waffles belgas crujientes con fresas rojas rebanadas y azúcar glass",
+    "url": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=640&q=80",
+    "id": 29
+  },
+  {
+    "filename": "croissant_cafe_mesa.jpg",
+    "path": "gallery_images/croissant_cafe_mesa.jpg",
+    "title": "Croissants dorados de mantequilla junto a una taza de café en mesa de madera",
+    "url": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=640&q=80",
+    "id": 30
+  },
+  {
+    "filename": "taza_cafe_latte_corazon.jpg",
+    "path": "gallery_images/taza_cafe_latte_corazon.jpg",
+    "title": "Taza de café caliente vista desde arriba con figura de corazón en la espuma de leche",
+    "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=640&q=80",
+    "id": 31
+  },
+  {
+    "filename": "te_matcha_verde.jpg",
+    "path": "gallery_images/te_matcha_verde.jpg",
+    "title": "Taza de té matcha verde brillante espumoso preparado al estilo japonés",
+    "url": "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=640&q=80",
+    "id": 32
+  },
+  {
+    "filename": "smoothie_bowl_frutas_coco.jpg",
+    "path": "gallery_images/smoothie_bowl_frutas_coco.jpg",
+    "title": "Tazón de smoothie morado de açaí decorado con rebanadas de plátano, fresas y semillas",
+    "url": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=640&q=80",
+    "id": 33
+  },
+  {
+    "filename": "cono_helado_fresa.jpg",
+    "path": "gallery_images/cono_helado_fresa.jpg",
+    "title": "Cono de galleta barquillo sosteniendo una bola de helado rosa en la mano",
+    "url": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=640&q=80",
+    "id": 34
+  },
+  {
+    "filename": "bolas_helado_chocolate.jpg",
+    "path": "gallery_images/bolas_helado_chocolate.jpg",
+    "title": "Bolas de helado de chocolate oscuro con chispas y salsa de cacao en tazón",
+    "url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=640&q=80",
+    "id": 35
+  },
+  {
+    "filename": "pastel_chocolate_cereza.jpg",
+    "path": "gallery_images/pastel_chocolate_cereza.jpg",
+    "title": "Rebanada de pastel de chocolate oscuro de varias capas con glaseado cremoso",
+    "url": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=640&q=80",
+    "id": 36
+  },
+  {
+    "filename": "cheesecake_frutos_rojos.jpg",
+    "path": "gallery_images/cheesecake_frutos_rojos.jpg",
+    "title": "Rebanada de pay de queso blanco cheesecake cubierto con mermelada y frambuesas rojas",
+    "url": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=640&q=80",
+    "id": 37
+  },
+  {
+    "filename": "donas_glaseado_rosa_chispas.jpg",
+    "path": "gallery_images/donas_glaseado_rosa_chispas.jpg",
+    "title": "Donas redondas con glaseado rosa y azul cubiertas de chispas de colores",
+    "url": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=640&q=80",
+    "id": 38
+  },
+  {
+    "filename": "macarons_franceses_pastel.jpg",
+    "path": "gallery_images/macarons_franceses_pastel.jpg",
+    "title": "Macarons franceses de colores pastel apilados con relleno dulce",
+    "url": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=640&q=80",
+    "id": 39
+  },
+  {
+    "filename": "churros_azucar_chocolate.jpg",
+    "path": "gallery_images/churros_azucar_chocolate.jpg",
+    "title": "Churros crujientes espolvoreados con azúcar y canela junto a taza de chocolate espeso",
+    "url": "https://images.unsplash.com/photo-1624371414361-e670edf4898d?w=640&q=80",
+    "id": 40
+  },
+  {
+    "filename": "galletas_chispas_chocolate.jpg",
+    "path": "gallery_images/galletas_chispas_chocolate.jpg",
+    "title": "Galletas horneadas con chispas de chocolate apiladas sobre superficie rústica",
+    "url": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=640&q=80",
+    "id": 41
+  },
+  {
+    "filename": "cupcakes_betun_colores.jpg",
+    "path": "gallery_images/cupcakes_betun_colores.jpg",
+    "title": "Cupcakes decorados con alto betún de crema batida rosa y chispas dulces",
+    "url": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=640&q=80",
+    "id": 42
+  },
+  {
+    "filename": "tabla_quesos_uvas_vino.jpg",
+    "path": "gallery_images/tabla_quesos_uvas_vino.jpg",
+    "title": "Tabla de charcutería con quesos variados, uvas, carnes frías, nueces y galletas",
+    "url": "https://images.unsplash.com/photo-1541529086526-db283c563270?w=640&q=80",
+    "id": 43
+  },
+  {
+    "filename": "hotdog_mostaza_salchicha.jpg",
+    "path": "gallery_images/hotdog_mostaza_salchicha.jpg",
+    "title": "Hot dog perro caliente en pan alargado con salchicha y línea de mostaza amarilla",
+    "url": "https://images.unsplash.com/photo-1619740455993-9e612b1af08a?w=640&q=80",
+    "id": 44
+  },
+  {
+    "filename": "sandwich_club_triple.jpg",
+    "path": "gallery_images/sandwich_club_triple.jpg",
+    "title": "Sándwich club partido en triángulos con jamón, queso, lechuga y jitomate",
+    "url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=640&q=80",
+    "id": 45
+  },
+  {
+    "filename": "poke_bowl_atun_aguacate.jpg",
+    "path": "gallery_images/poke_bowl_atun_aguacate.jpg",
+    "title": "Poke bowl hawaiano con cubos de atún fresco, aguacate, edamames, arroz y ajonjolí",
+    "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=640&q=80",
+    "id": 46
+  },
+  {
+    "filename": "curry_indio_arroz_naan.jpg",
+    "path": "gallery_images/curry_indio_arroz_naan.jpg",
+    "title": "Curry especiado en salsa naranja con arroz blanco basmati y pan naan",
+    "url": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=640&q=80",
+    "id": 47
+  },
+  {
+    "filename": "dumplings_vaporera_bambu.jpg",
+    "path": "gallery_images/dumplings_vaporera_bambu.jpg",
+    "title": "Dumplings orientales blancos al vapor servidos dentro de canasta de bambú con salsa",
+    "url": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=640&q=80",
+    "id": 48
+  },
+  {
+    "filename": "pad_thai_camaron_cacahuate.jpg",
+    "path": "gallery_images/pad_thai_camaron_cacahuate.jpg",
+    "title": "Fideos salteados Pad Thai en plato con camarones, limón verde y cacahuate picado",
+    "url": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=640&q=80",
+    "id": 49
+  },
+  {
+    "filename": "limonada_menta_hielo.jpg",
+    "path": "gallery_images/limonada_menta_hielo.jpg",
+    "title": "Vaso de cristal con limonada fría, cubos de hielo, rodajas de limón y hojas de menta",
+    "url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=640&q=80",
+    "id": 50
+  },
+  {
+    "filename": "malteada_fresa_crema_batida.jpg",
+    "path": "gallery_images/malteada_fresa_crema_batida.jpg",
+    "title": "Malteada rosa en vaso alto con crema batida, popote y jarabe dulce",
+    "url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=640&q=80",
+    "id": 51
+  },
+  {
+    "filename": "coctel_naranja_copa.jpg",
+    "path": "gallery_images/coctel_naranja_copa.jpg",
+    "title": "Cóctel refrescante color naranja con hielo y rodaja de cítrico en copa de vidrio",
+    "url": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=640&q=80",
+    "id": 52
+  },
+  {
+    "filename": "canasta_frutas_fresas_uvas.jpg",
+    "path": "gallery_images/canasta_frutas_fresas_uvas.jpg",
+    "title": "Plato colorido de frutas frescas cortadas con fresas, kiwi verde, arándanos y naranja",
+    "url": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=640&q=80",
+    "id": 53
+  },
+  {
+    "filename": "huevos_estrellados_tocino.jpg",
+    "path": "gallery_images/huevos_estrellados_tocino.jpg",
+    "title": "Desayuno de huevos estrellados con yema amarilla, tiras de tocino crujiente y pan",
+    "url": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=640&q=80",
+    "id": 54
+  },
+  {
+    "filename": "tiramisu_cacao_italiano.jpg",
+    "path": "gallery_images/tiramisu_cacao_italiano.jpg",
+    "title": "Postre tiramisú italiano espolvoreado con cacao en polvo oscuro y capas de crema",
+    "url": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=640&q=80",
+    "id": 55
+  },
+  {
+    "filename": "brochetas_carne_verduras.jpg",
+    "path": "gallery_images/brochetas_carne_verduras.jpg",
+    "title": "Brochetas asadas a la parrilla con trozos de carne, pimientos de colores y cebolla",
+    "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=640&q=80",
+    "id": 56
+  },
+  {
+    "filename": "avena_frutas_semillas.jpg",
+    "path": "gallery_images/avena_frutas_semillas.jpg",
+    "title": "Tazón de avena caliente con rodajas de plátano, arándanos azules y semillas de chía",
+    "url": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=640&q=80",
+    "id": 57
+  }
+]

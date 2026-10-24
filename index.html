@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contexto con Imágenes — Reto Semántico Visual</title>
+  <meta name="description" content="Adivina la imagen secreta describiendo su contexto. El juego ordena la galería por similitud semántica hasta que lleves la imagen secreta al lugar #1." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="26" height="26" rx="7" stroke="currentColor" stroke-width="2.5"/>
+          <circle cx="11.5" cy="11.5" r="2.5" fill="currentColor"/>
+          <path d="M5 23L12.5 15.5C13.3 14.7 14.7 14.7 15.5 15.5L22 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M19 19L22.5 15.5C23.3 14.7 24.7 14.7 25.5 15.5L28 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-title-row">
+          <h1>Contexto <span class="accent-gradient">Visual</span></h1>
+          <span id="modeBadge" class="badge badge-daily">Reto Diario</span>
+        </div>
+        <p class="brand-subtitle">Describe la escena. Lleva la imagen secreta al <strong>Lugar #1</strong>.</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button type="button" id="btnHelp" class="btn btn-ghost" aria-label="Cómo jugar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span>Cómo jugar</span>
+      </button>
+      <button type="button" id="btnHint" class="btn btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3A7 7 0 0 0 12 2z"/></svg>
+        <span>Pista</span>
+      </button>
+      <button type="button" id="btnChallengeFriend" class="btn btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        <span>Retar amigo</span>
+      </button>
+      <button type="button" id="btnNewGame" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        <span>Partida Libre</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-layout">
+    <!-- Left / Top Panel: Prompt Input, Status & Guess History -->
+    <section class="control-panel" aria-label="Panel de juego">
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-label">Intentos</span>
+          <span id="statAttempts" class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Mejor lugar</span>
+          <span id="statBestRank" class="stat-value">—</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Galería</span>
+          <span id="statTotalImages" class="stat-value">30</span>
+        </div>
+      </div>
+
+      <!-- Prompt Form -->
+      <form id="guessForm" class="guess-form" autocomplete="off">
+        <label for="guessInput" class="sr-only">Escribe una descripción visual</label>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="guessInput"
+            name="guess"
+            placeholder="Ej. 'noche con luces de neón y lluvia', 'animal en el océano'..."
+            required
+            minlength="2"
+            maxlength="120"
+          />
+          <button type="submit" id="btnSubmitGuess" class="btn btn-submit">
+            <span>Evaluar</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+        <div class="quick-chips" id="quickChips" aria-label="Ideas de descripciones iniciales">
+          <span class="chips-label">Probar:</span>
+          <button type="button" class="chip" data-prompt="naturaleza montañas y bosque al aire libre">🌲 Naturaleza</button>
+          <button type="button" class="chip" data-prompt="ciudad de noche con edificios y luces">🌃 Ciudad nocturna</button>
+          <button type="button" class="chip" data-prompt="animales salvajes y fauna">🐾 Animales</button>
+          <button type="button" class="chip" data-prompt="comida deliciosa mesa y bebida">🍕 Comida</button>
+          <button type="button" class="chip" data-prompt="tecnología espacio ciencia y futuro">🚀 Futuro / Ciencia</button>
+        </div>
+      </form>
+
+      <!-- Live Feedback Banner -->
+      <div id="feedbackBanner" class="feedback-banner hidden" role="status" aria-live="polite">
+        <div class="feedback-rank-badge" id="feedbackRankBadge">#12</div>
+        <div class="feedback-info">
+          <div class="feedback-headline" id="feedbackHeadline">¡Tibio! La imagen secreta quedó en el lugar #12</div>
+          <div class="feedback-sub" id="feedbackSub">Tu descripción coincidió más con "Ciudad Cyberpunk" (#1) que con la secreta.</div>
+        </div>
+      </div>
+
+      <!-- Proximity Thermometer -->
+      <div class="thermometer-card">
+        <div class="thermometer-header">
+          <span>Posición de la imagen secreta</span>
+          <span id="thermometerText" class="mono-tag">Esperando tu 1ª descripción...</span>
+        </div>
+        <div class="thermometer-track">
+          <div id="thermometerFill" class="thermometer-fill" style="inline-size: 0%"></div>
+          <div id="thermometerMarker" class="thermometer-marker hidden" style="inset-inline-start: 0%"></div>
+        </div>
+        <div class="thermometer-scale">
+          <span>🔥 #1 (Meta)</span>
+          <span>⚡ #5</span>
+          <span>🌤️ #15</span>
+          <span>❄️ #30</span>
+        </div>
+      </div>
+
+      <!-- History List -->
+      <div class="history-section">
+        <div class="section-title-row">
+          <h2>Historial de descripciones</h2>
+          <span class="section-hint">Ordenado por mejor posición</span>
+        </div>
+        <div id="historyList" class="history-list">
+          <div class="empty-state">
+            <p>Todavía no has escrito ninguna descripción.</p>
+            <p class="empty-sub">Cada vez que escribas una frase, ordenaremos las 30 imágenes según qué tanto se parecen a tu texto y te diremos en qué posición cayó la <strong>imagen secreta</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="danger-zone">
+        <button type="button" id="btnGiveUp" class="btn-link">¿Te rindes? Revelar cuál era la imagen secreta</button>
+      </div>
+    </section>
+
+    <!-- Right / Main Panel: Interactive Gallery -->
+    <section class="gallery-panel" aria-label="Galería de imágenes">
+      <div class="gallery-toolbar">
+        <div>
+          <h2 id="galleryTitle">Galería de Candidatas (30)</h2>
+          <p id="gallerySubtitle" class="gallery-subtitle">
+            Una de estas imágenes es la secreta. Al enviar una descripción, la galería se reordenará de #1 a #30 según tu texto.
+          </p>
+        </div>
+        <div class="gallery-controls">
+          <label class="toggle-control">
+            <input type="checkbox" id="toggleTitles" checked />
+            <span>Mostrar títulos y etiquetas al hacer clic</span>
+          </label>
+        </div>
+      </div>
+
+      <div id="galleryGrid" class="gallery-grid">
+        <!-- Cards injected by app.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal: How to Play (Light dismiss enabled) -->
+  <dialog id="helpDialog" closedby="any" aria-labelledby="helpDialogTitle" class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="helpDialogTitle">¿Cómo se juega Contexto Visual?</h2>
+        <button type="button" class="btn-icon" data-close-dialog="helpDialog" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body">
+        <ol class="steps-list">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <strong>La computadora elige en secreto una imagen</strong> de la galería de 30 fotografías. Todas están a la vista desde el inicio, ¡pero no sabes cuál es la elegida!
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <strong>Escribe descripciones en lenguaje natural</strong> (colores, objetos, emociones, clima, ambiente o lugar). El motor semántico califica las 30 imágenes frente a tu descripción y las ordena del <strong>#1</strong> (la más parecida a tu texto) al <strong>#30</strong>.
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <strong>Observa en qué lugar quedó la imagen secreta.</strong> Si tu descripción deja a la secreta en el <strong>#4</strong>, significa que solo 3 imágenes de la galería se parecen más a tu frase que la secreta. ¡Mira cuáles quedaron arriba para deducir qué tienen en común!
+            </div>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <div>
+              <strong>¡Llévala al lugar #1!</strong> Afina tu descripción con detalles precisos de la imagen que sospechas hasta que la imagen secreta alcance el puesto <strong>#1</strong>.
+            </div>
+          </li>
+        </ol>
+        <div class="legend-grid">
+          <div class="legend-pill rank-hot">🔥 #1 – #5 ¡Quemando!</div>
+          <div class="legend-pill rank-warm">🌤️ #6 – #15 Tibio</div>
+          <div class="legend-pill rank-cold">❄️ #16 – #30 Frío</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-close-dialog="helpDialog">¡Entendido, a jugar!</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal: Image Inspector -->
+  <dialog id="inspectDialog" closedby="any" aria-labelledby="inspectTitle" class="modal-dialog inspect-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="inspectTitle">Inspeccionar Imagen</h2>
+        <button type="button" class="btn-icon" data-close-dialog="inspectDialog" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body inspect-body">
+        <div class="inspect-image-wrap">
+          <img id="inspectImg" src="" alt="" />
+          <span id="inspectRankBadge" class="card-rank-badge">#1</span>
+        </div>
+        <div class="inspect-details">
+          <p id="inspectCategory" class="inspect-category"></p>
+          <p id="inspectHint" class="inspect-hint">
+            ¿Crees que esta es la imagen secreta? Escribe una descripción muy específica de lo que ves aquí para llevarla al <strong>Lugar #1</strong>.
+          </p>
+          <div class="inspect-tags" id="inspectTags"></div>
+          <button type="button" id="btnUseInspectPrompt" class="btn btn-secondary btn-full">
+            Usar elementos de esta foto en mi descripción
+          </button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal: Victory / End of Round -->
+  <dialog id="victoryDialog" closedby="any" aria-labelledby="victoryTitle" class="modal-dialog victory-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="victoryTitle">🎉 ¡Llevaste la imagen secreta al #1!</h2>
+        <button type="button" class="btn-icon" data-close-dialog="victoryDialog" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body victory-body">
+        <div class="secret-reveal-card">
+          <img id="victoryImg" src="" alt="" />
+          <div class="secret-reveal-overlay">
+            <span class="rank-crown">👑 LUGAR #1</span>
+            <h3 id="victoryImgTitle">Título de la imagen</h3>
+            <p id="victoryImgDesc"></p>
+          </div>
+        </div>
+
+        <div class="victory-metrics">
+          <div class="metric-box">
+            <span class="metric-num" id="victoryAttempts">0</span>
+            <span class="metric-lbl">Intentos</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-num" id="victoryHints">0</span>
+            <span class="metric-lbl">Pistas usadas</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-num" id="victoryWinningPrompt">"..."</span>
+            <span class="metric-lbl">Descripción ganadora</span>
+          </div>
+        </div>
+
+        <div class="share-box">
+          <p class="share-label">Comparte tu resultado o reta a tus amigos con la misma imagen secreta:</p>
+          <div class="share-buttons">
+            <button type="button" id="btnShareResult" class="btn btn-primary">
+              📋 Copiar resumen de partida
+            </button>
+            <button type="button" id="btnShareSeedLink" class="btn btn-secondary">
+              🔗 Copiar enlace de este reto
+            </button>
+            <button type="button" id="btnPlayAgainModal" class="btn btn-ghost">
+              🔄 Jugar otra partida
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

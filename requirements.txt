@@ -1,0 +1,8 @@
+torch
+torchvision
+transformers
+sentence-transformers
+gradio
+pillow
+numpy
+requests
